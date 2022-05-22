@@ -1,5 +1,5 @@
 {
-  "name": "lerna-demo",
+  "name": "lerna-demo-eric-wan",
   "private": true,
   "workspaces": [
     "packages/*"
