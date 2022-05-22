@@ -23,6 +23,9 @@
   "bugs": {
     "url": "https://github.com/GOGOGOSIR/lerna-demo/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@gg/f-package": "^0.0.0"
   }
