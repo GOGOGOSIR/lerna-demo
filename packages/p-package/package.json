@@ -1,6 +1,6 @@
 {
   "name": "@eric-wan/p-wan-pk-demo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "> TODO: description",
   "author": "wanjianqiang <17688728066@163.com>",
   "homepage": "https://github.com/GOGOGOSIR/lerna-demo/tree/main/packages/p-package#readme",
@@ -27,6 +27,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@eric-wan/f-wan-pk-demo": "^0.1.0"
+    "@eric-wan/f-wan-pk-demo": "^0.2.0"
   }
 }
