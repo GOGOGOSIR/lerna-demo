@@ -4,5 +4,5 @@ module.exports = pPackage;
 
 function pPackage() {
   fPackage();
-  return 2;
+  return 22;
 }
