@@ -10,7 +10,7 @@
     "cz": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1",
     "r": "node ./scripts/release/release.js",
-    "release": "lerna publish --conventional-commits",
+    "release": "lerna publish",
     "re": "npx conventional-changelog --preset conventionalcommits --release-count 0 --outfile ./CHANGELOG.md --verbose"
   },
   "repository": {
