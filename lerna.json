@@ -16,7 +16,7 @@
     }
   },
   "changelogPreset": {
-    "name": "angular",
+    "name": "conventionalcommits",
     "header": "",
     "types": [
       {
