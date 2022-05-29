@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.0](https://github.com/GOGOGOSIR/lerna-demo/compare/v0.4.0...v0.5.0) (2022-05-29)
+
+
+### ✨ Features | 新功能
+
+* **f-package:** 新增功能1 ([51e0ee2](https://github.com/GOGOGOSIR/lerna-demo/commit/51e0ee26882d38fc8e25649212163314f5a7d6fb))
+
+
+
 ## [0.4.0](https://github.com/GOGOGOSIR/lerna-demo/compare/v0.3.0...v0.4.0) (2022-05-26)
 
 **Note:** Version bump only for package @eric-wan/f-wan-pk-demo
