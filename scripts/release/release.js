@@ -48,7 +48,7 @@ const release = async () => {
     // await execa('node', [path.resolve(__dirname, './gen-changelog.js')], { stdio: 'inherit' })
 
     const { stdout } = await execa('git', ['branch', '-a'])
-    const hasDevBranch = stdout.split('\n').some(b => b.includes('main'))
+    const hasDevBranch = stdout.split('\n').some(b => b.includes('dev'))
     if (hasDevBranch) {
       await execa('git', ['checkout', 'dev'], { stdio: 'inherit' })
       await execa('git', ['rebase', 'master'], { stdio: 'inherit' })
