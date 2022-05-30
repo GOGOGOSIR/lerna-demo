@@ -17,11 +17,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: 'lts/*'
+          cache: npm
+          node-version: 16
       - name: Install dependencies
         env:
           CI: true
-        run: npm ci
+        run: npx lerna bootstrap
       - name: Semantic Release
         if: success()
         env:
