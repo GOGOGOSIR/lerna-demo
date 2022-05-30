@@ -1,7 +1,7 @@
-"use strict";
+'use strict'
 
-module.exports = fPackage;
+module.exports = fPackage
 
 function fPackage() {
-  return 1212;
+  return 1212
 }

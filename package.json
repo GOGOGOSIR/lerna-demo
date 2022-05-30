@@ -11,11 +11,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "r": "node ./scripts/release/release.js",
     "release": "lerna publish",
-    "re": "npx conventional-changelog --preset conventionalcommits --release-count 0 --outfile ./CHANGELOG.md --verbose"
+    "re": "npx conventional-changelog --preset conventionalcommits --release-count 0 --outfile ./CHANGELOG.md --verbose",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GOGOGOSIR/lerna-demo.git"
+    "url": "https://github.com/GOGOGOSIR/lerna-demo.git"
   },
   "keywords": [],
   "author": "",
@@ -27,20 +28,26 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.1",
     "@commitlint/config-conventional": "^17.0.0",
+    "@gogogosir/eslint-config": "^0.0.1",
+    "@gogogosir/prettier-config": "^0.0.1",
     "commitizen": "^4.2.4",
     "conventional-changelog-cli": "^2.2.2",
     "cz-conventional-changelog": "^3.3.0",
     "cz-lerna-changelog": "^2.0.3",
+    "eslint": "^8.16.0",
     "execa": "^6.1.0",
     "globby": "^13.1.1",
     "inquirer": "^8.2.4",
     "lerna": "^4.0.0",
     "node-fetch": "^3.2.4",
+    "prettier": "^2.6.2",
+    "semantic-release": "^19.0.2",
     "semver": "^7.3.7"
   },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "version": "0.0.0-development"
 }
