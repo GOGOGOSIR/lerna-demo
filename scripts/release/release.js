@@ -51,12 +51,12 @@ const release = async () => {
     const hasDevBranch = stdout.split('\n').some(b => b.includes('main'))
     if (hasDevBranch) {
       await execa('git', ['checkout', 'dev'], { stdio: 'inherit' })
-      await execa('git', ['rebase', 'main'], { stdio: 'inherit' })
+      await execa('git', ['rebase', 'master'], { stdio: 'inherit' })
     } else {
       await execa('git', ['checkout', '-b', 'dev'], { stdio: 'inherit' })
     }
     await execa('git', ['push', 'origin', 'dev'], { stdio: 'inherit' })
-    await execa('git', ['checkout', 'main'], { stdio: 'inherit' })
+    await execa('git', ['checkout', 'master'], { stdio: 'inherit' })
   } catch (err) {
     console.error(err)
   }
