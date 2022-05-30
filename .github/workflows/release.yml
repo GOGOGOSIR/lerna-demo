@@ -19,10 +19,6 @@ jobs:
         with:
           cache: npm
           node-version: 16
-      - name: Install dependencies
-        env:
-          CI: true
-        run: npx lerna bootstrap
       - name: Semantic Release
         if: success()
         env:
