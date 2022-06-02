@@ -9,9 +9,9 @@
   "scripts": {
     "cz": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "r": "node ./scripts/release/release.js",
     "release": "node ./scripts/release/release.js",
-    "re": "npx conventional-changelog --preset conventionalcommits --release-count 0 --outfile ./CHANGELOG.md --verbose",
+    "changelog": "conventional-changelog -p cmyr-config -i CHANGELOG.md -s -r 0",
+    "re": "npx lerna exec --concurrency 1 --stream -- 'conventional-changelog -p cmyr-config -r 0 --commit-path $PWD --pkg $PWD/package.json -o $PWD/CHANGELOG.md -v --lerna-package $LERNA_PACKAGE_NAME'",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -19,7 +19,7 @@
     "url": "https://github.com/GOGOGOSIR/lerna-demo.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "wanjianqiang1 <eric_wan2021@163.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GOGOGOSIR/lerna-demo/issues"
@@ -31,7 +31,9 @@
     "@gogogosir/eslint-config": "^0.0.1",
     "@gogogosir/prettier-config": "^0.0.1",
     "commitizen": "^4.2.4",
+    "conventional-changelog": "^3.1.25",
     "conventional-changelog-cli": "^2.2.2",
+    "conventional-changelog-cmyr-config": "^2.0.4",
     "cz-conventional-changelog": "^3.3.0",
     "cz-lerna-changelog": "^2.0.3",
     "eslint": "^8.16.0",
@@ -49,5 +51,9 @@
       "path": "node_modules/cz-conventional-changelog"
     }
   },
-  "version": "0.0.0-development"
+  "changelog": {
+    "bugsUrl": "https://github.com/GOGOGOSIR/lerna-demo/issues/",
+    "authorName": false,
+    "authorEmail": false
+  }
 }

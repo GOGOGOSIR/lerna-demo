@@ -2347,6 +2347,13 @@ conventional-changelog-cli@^2.2.2:
     meow "^8.0.0"
     tempfile "^3.0.0"
 
+conventional-changelog-cmyr-config@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-cmyr-config/-/conventional-changelog-cmyr-config-2.0.4.tgz#524ab85697cc4594f3fbd50f5e9ead8a0411da25"
+  integrity sha512-E8ANy6CDEL8NiCsMNy5fY6qEEBELySaGD8Za60yomEadXkKxVhqk2hyvkAoZetkjDIDKQO4JCsYU6huG2NAd9Q==
+  dependencies:
+    lodash "^4.17.21"
+
 conventional-changelog-codemirror@^2.0.8:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/conventional-changelog-codemirror/-/conventional-changelog-codemirror-2.0.8.tgz#398e9530f08ce34ec4640af98eeaf3022eb1f7dc"
@@ -2439,7 +2446,7 @@ conventional-changelog-writer@^5.0.0:
     split "^1.0.0"
     through2 "^4.0.0"
 
-conventional-changelog@^3.1.24:
+conventional-changelog@^3.1.24, conventional-changelog@^3.1.25:
   version "3.1.25"
   resolved "https://registry.yarnpkg.com/conventional-changelog/-/conventional-changelog-3.1.25.tgz#3e227a37d15684f5aa1fb52222a6e9e2536ccaff"
   integrity sha512-ryhi3fd1mKf3fSjbLXOfK2D06YwKNic1nC9mWqybBHdObPd8KJ2vjaXZfYj1U23t+V8T8n0d7gwnc9XbIdFbyQ==

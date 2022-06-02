@@ -37,15 +37,14 @@ const release = async () => {
     'publish',
     version,
     '--dist-tag',
-    distTag,
-    '--conventional-commits'
+    distTag
   ]
 
   lernaArgs.push('--force-publish')
 
   try {
     await execa(require.resolve('lerna/cli'), lernaArgs, { stdio: 'inherit' })
-    // await execa('node', [path.resolve(__dirname, './gen-changelog.js')], { stdio: 'inherit' })
+    await execa('npm', ['run', 'changelog'], { stdio: 'inherit' })
 
     const { stdout } = await execa('git', ['branch', '-a'])
     const hasDevBranch = stdout.split('\n').some(b => b.includes('dev'))
