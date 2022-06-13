@@ -20,7 +20,7 @@ jobs:
           cache: npm
           node-version: 16
       - name: GitHub Release
-        run: npm run github-release
+        run: npx conventional-github-releaser -p cmyr-config -r 0
       #   if: success()
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
