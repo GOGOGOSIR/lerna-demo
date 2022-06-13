@@ -3,6 +3,7 @@ const execa = require('execa')
 const semver = require('semver')
 const inquirer = require('inquirer')
 const currentVersion = require('../../lerna.json').version
+const upDatePkgVersion = require('./update-pkg-version.js')
 
 const release = async () => {
   console.log(`Current version: ${currentVersion}`)
@@ -44,6 +45,7 @@ const release = async () => {
   lernaArgs.push('--force-publish')
 
   try {
+    await upDatePkgVersion(version)
     await execa(require.resolve('lerna/cli'), lernaArgs, { stdio: 'inherit' })
     // await execa('node', [path.resolve(__dirname, './gen-changelog.js')], { stdio: 'inherit' })
 
