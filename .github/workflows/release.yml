@@ -19,10 +19,12 @@ jobs:
         with:
           cache: npm
           node-version: 16
+      - name: Install deps
+        run: npx lerna bootstrap
       - name: GitHub Release
         env:
           CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx conventional-github-releaser -p cmyr-config -r 0
+        run: npm run github-release
       #   if: success()
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
