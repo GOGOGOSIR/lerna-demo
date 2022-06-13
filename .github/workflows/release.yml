@@ -14,12 +14,13 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      # - name: Setup Node
-      #   uses: actions/setup-node@v2
-      #   with:
-      #     cache: npm
-      #     node-version: 16
-      # - name: Semantic Release
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          cache: npm
+          node-version: 16
+      - name: GitHub Release
+        run: npm run github-release
       #   if: success()
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
