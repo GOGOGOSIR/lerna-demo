@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.4](https://github.com/GOGOGOSIR/lerna-demo/compare/v0.6.3...v0.6.4) (2022-06-13)
+
+
+### 👷 Continuous Integration | CI 配置
+
+* test1 ([261e7a2](https://github.com/GOGOGOSIR/lerna-demo/commit/261e7a213fb6f3ab56d90149de7edef8db9a7e75))
+* test2 ([b1e2bc1](https://github.com/GOGOGOSIR/lerna-demo/commit/b1e2bc145542544d521ad506adff792fc125308b))
+* test3 ([ce7f84e](https://github.com/GOGOGOSIR/lerna-demo/commit/ce7f84e8ad8db01325d8cbfdaf738d54033c18af))
+
+
+### ✨ Features | 新功能
+
+* 1 ([13a3bed](https://github.com/GOGOGOSIR/lerna-demo/commit/13a3bed8f5c6c306cf4818e53f22916fa2ef866d))
+* **f-package:** test1 ([c22d67d](https://github.com/GOGOGOSIR/lerna-demo/commit/c22d67d1bdb9300a25adf1fe1de6bb2049f71be7))
+
+
+
 ### [0.6.3](https://github.com/GOGOGOSIR/lerna-demo/compare/v0.6.2...v0.6.3) (2022-06-13)
 
 
