@@ -47,7 +47,7 @@ const release = async () => {
   try {
     await upDatePkgVersion(version)
     await execa(require.resolve('lerna/cli'), lernaArgs, { stdio: 'inherit' })
-    // await execa('node', [path.resolve(__dirname, './gen-changelog.js')], { stdio: 'inherit' })
+    await execa('npm', ['run', 'github-release'], { stdio: 'inherit' })
 
     const { stdout } = await execa('git', ['branch', '-a'])
     const hasDevBranch = stdout.split('\n').some(b => b.includes('dev'))
