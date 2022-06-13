@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.3](https://github.com/GOGOGOSIR/lerna-demo/compare/v0.6.2...v0.6.3) (2022-06-13)
+
+
+### 👷 Continuous Integration | CI 配置
+
+* **f-package:** add github workflows ([42063c3](https://github.com/GOGOGOSIR/lerna-demo/commit/42063c36029df91e20c5c810301530465e66a45e))
+
+
+
 ### [0.6.2](https://github.com/GOGOGOSIR/lerna-demo/compare/v0.6.1...v0.6.2) (2022-05-30)
 
 **Note:** Version bump only for package @eric-wan/f-wan-pk-demo
