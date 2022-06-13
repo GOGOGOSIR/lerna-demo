@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.5](https://github.com/GOGOGOSIR/lerna-demo/compare/v0.6.4...v0.6.5) (2022-06-13)
+
+
+### ✨ Features | 新功能
+
+* **p-package:** test33 ([2423839](https://github.com/GOGOGOSIR/lerna-demo/commit/2423839fbfda3a0c927e8c516ed5ede9706441a7))
+
+
+
 ### [0.6.4](https://github.com/GOGOGOSIR/lerna-demo/compare/v0.6.3...v0.6.4) (2022-06-13)
 
 
