@@ -39,14 +39,18 @@ const release = async () => {
     version,
     '--dist-tag',
     distTag,
-    '--conventional-commits'
+    '--conventional-commits',
+    '--no-push'
   ]
 
   lernaArgs.push('--force-publish')
 
   try {
-    await upDatePkgVersion(version)
     await execa(require.resolve('lerna/cli'), lernaArgs, { stdio: 'inherit' })
+    await upDatePkgVersion(version)
+    await execa('git', ['add', '.'], { stdio: 'inherit' })
+    await execa('git', ['commit', '-m', `chore(release): publish ${version}`], { stdio: 'inherit' })
+    await execa('git', ['push', '--set-upstream', 'origin', 'master', '-f'], { stdio: 'inherit' })
     await execa('npm', ['run', 'github-release'], { stdio: 'inherit' })
 
     const { stdout } = await execa('git', ['branch', '-a'])
