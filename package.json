@@ -52,7 +52,6 @@
       "path": "node_modules/cz-conventional-changelog"
     }
   },
-  "version": "0.6.3",
   "changelog": {
     "bugsUrl": "https://github.com/GOGOGOSIR/lerna-demo/issues/",
     "emojis": true,
