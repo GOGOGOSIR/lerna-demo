@@ -46,12 +46,13 @@ const release = async () => {
   lernaArgs.push('--force-publish')
 
   try {
-    await execa(require.resolve('lerna/cli'), lernaArgs, { stdio: 'inherit' })
     await upDatePkgVersion(version)
-    await execa('git', ['add', '.'], { stdio: 'inherit' })
-    await execa('git', ['commit', '-m', `chore(release): publish ${version}`], { stdio: 'inherit' })
-    await execa('git', ['push', '--set-upstream', 'origin', 'master', '-f'], { stdio: 'inherit' })
     await execa('npm', ['run', 'github-release'], { stdio: 'inherit' })
+    await execa(require.resolve('lerna/cli'), lernaArgs, { stdio: 'inherit' })
+
+    // await execa('git', ['add', '.'], { stdio: 'inherit' })
+    // await execa('git', ['commit', '-m', `chore(release): publish ${version}`], { stdio: 'inherit' })
+    // await execa('git', ['push', '--set-upstream', 'origin', 'master', '-f'], { stdio: 'inherit' })
 
     const { stdout } = await execa('git', ['branch', '-a'])
     const hasDevBranch = stdout.split('\n').some(b => b.includes('dev'))
