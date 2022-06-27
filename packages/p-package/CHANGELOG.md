@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.6.9](https://github.com/GOGOGOSIR/lerna-demo/compare/v0.6.8...v0.6.9) (2022-06-27)
+
+
+### ✨ Features | 新功能
+
+* **@eric-wan/p-wan-pk-demo:** change 1 ([0cf44d5](https://github.com/GOGOGOSIR/lerna-demo/commit/0cf44d5ea71a5899190b6f1db6b551f3313bd528))
+* **@eric-wan/p-wan-pk-demo:** change 2 ([f63a82b](https://github.com/GOGOGOSIR/lerna-demo/commit/f63a82bb51a9cc0b6152b9ea2555125a10bd755e))
+* **p-package:** 5 ([ac0cec2](https://github.com/GOGOGOSIR/lerna-demo/commit/ac0cec2cc1aaafd3250bfe76a3e5bfe520c7ce86))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **@eric-wan/p-wan-pk-demo:** fix 1 ([27b095c](https://github.com/GOGOGOSIR/lerna-demo/commit/27b095c3a5bc5581096bb26838ee06b21ff7dc3b))
+* **@eric-wan/p-wan-pk-demo:** fix 2 ([7e91c1e](https://github.com/GOGOGOSIR/lerna-demo/commit/7e91c1e32514b7053784734be2b6a4168c69d420))
+
+
+
 
 
 **Note:** Version bump only for package @eric-wan/p-wan-pk-demo
