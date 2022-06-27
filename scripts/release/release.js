@@ -47,7 +47,7 @@ const release = async () => {
 
   try {
     await upDatePkgVersion(version)
-    await execa('npm', ['run', 'github-release'], { stdio: 'inherit' })
+
     await execa(require.resolve('lerna/cli'), lernaArgs, { stdio: 'inherit' })
 
     // await execa('git', ['add', '.'], { stdio: 'inherit' })
@@ -64,6 +64,8 @@ const release = async () => {
     }
     await execa('git', ['push', 'origin', 'dev'], { stdio: 'inherit' })
     await execa('git', ['checkout', 'master'], { stdio: 'inherit' })
+
+    await execa('npm', ['run', 'github-release'], { stdio: 'inherit' })
   } catch (err) {
     console.error(err)
   }
